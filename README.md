@@ -6,6 +6,7 @@ MeCab API Server on PSGI + Docker as [ytnobody/docker-mecab-psgi](https://github
 
     $ heroku plugins:install heroku-container-registry
     $ heroku container:login
+    $ heroku create
     $ heroku container:push web --app APP_NAME
 
 ## API [GET /]
