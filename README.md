@@ -20,7 +20,7 @@ Parse specified text and return thair nodes in JSON response.
 
 request 
 
-    http://localhost:7654/?text=%E3%81%99%E3%82%82%E3%82%82%E3%82%82%E3%82%82%E3%82%82%E3%82%82%E3%82%82%E3%82%82%E3%81%AE%E3%81%86%E3%81%A1
+    https://ichigotake-mecab-psgi.herokuapp.com/?text=%E3%81%99%E3%82%82%E3%82%82%E3%82%82%E3%82%82%E3%82%82%E3%82%82%E3%82%82%E3%82%82%E3%81%AE%E3%81%86%E3%81%A1
 
 response
 
