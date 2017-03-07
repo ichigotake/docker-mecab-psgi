@@ -1,1 +1,5 @@
-plackup app.psgi -p $PORT
+#!/usr/bin/env bash
+
+port=${PORT:-7654}
+
+plackup app.psgi -p $port
