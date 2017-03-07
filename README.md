@@ -9,6 +9,23 @@ MeCab API Server on PSGI + Docker as [ytnobody/docker-mecab-psgi](https://github
     $ heroku create
     $ heroku container:push web --app APP_NAME
 
+## ytnobody/docker-mecab-psgi OR ichigotake/docker-mecab-psgi?
+
+### Q. I will deploy MeCab API to Heroku
+
+We recommend to use this (ichigotake-mecab-psgi), because ytnobody/docker-mecab-psgi is not working on Heroku.
+
+### Q. I will deploy MeCab API to my host
+
+We recommend to use ytnobody/docker-mecab-psgi, because ytnobody/docker-mecab-psgi's image size is smaller than ichigotake/docker-mecab-psgi.
+
+```
+$ docker images
+REPOSITORY                     TAG                 IMAGE ID            CREATED             SIZE
+ichigotake/docker-mecab-psgi   <none>              0e61e80f8cf2        3 hours ago         904 MB
+ytnobody/docker-mecab-psgi     latest              4a3640c86dd7        3 hours ago         570 MB
+```
+
 ## API [GET /]
 
 Parse specified text and return thair nodes in JSON response.
